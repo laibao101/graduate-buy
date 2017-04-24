@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {AppRegistry, StyleSheet, Text, View, TouchableOpacity, TextInput, Image, Dimensions} from 'react-native';
+import {AppRegistry, StyleSheet, Text, View, TouchableOpacity, TextInput, Image, Dimensions, Platform} from 'react-native';
 
 // 自定义组件
 import HomeDetail from './HomeDetail';
@@ -43,6 +43,7 @@ export default class Home extends Component {
     }
 }
 
+console.log(Platform);
 
 const width = Dimensions.get('window').width;
 
@@ -59,15 +60,16 @@ const styles = StyleSheet.create({
         backgroundColor:'rgba(255,96,0,1)',
         flexDirection:'row',
         alignItems:'center',
-        justifyContent:'space-around'
+        justifyContent:'space-around',
+		paddingTop:Platform.OS === 'ios' ? 20 : 0
     },
     navRightImageWarper:{
         flexDirection:'row',
         justifyContent:'space-around'
     },
     navRightImage:{
-        width:25,
-        height:25
+        width:20,
+        height:20
     },
     container: {
         flex: 1,
