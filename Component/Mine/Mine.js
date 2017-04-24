@@ -12,15 +12,9 @@ export default class Mine extends Component {
     return (
       <View style={styles.container}>
 		  <Text style={styles.welcome}>
-			  Welcome to React Native!
+			  我的
 		  </Text>
-		  <Text style={styles.instructions}>
-			  To get started, edit index.android.js
-		  </Text>
-		  <Text style={styles.instructions}>
-			  Double tap R on your keyboard to reload,{'\n'}
-			  Shake or press menu button for dev menu
-		  </Text>
+
       </View>
     );
   }

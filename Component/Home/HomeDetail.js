@@ -7,13 +7,14 @@ import {
   View
 } from 'react-native';
 
-export default class Shop extends Component {
+export default class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
 		  <Text style={styles.welcome}>
-			  商家
+			  home detail
 		  </Text>
+
       </View>
     );
   }
@@ -24,7 +25,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'red',
   },
   welcome: {
     fontSize: 20,
