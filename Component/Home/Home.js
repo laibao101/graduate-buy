@@ -14,7 +14,6 @@ export default class Home extends Component {
             <View style={styles.container}>
                 {/* 导航 */}
                 {this.renderNavBar()}
-
             </View>
         );
     }
