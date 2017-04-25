@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
 		flexDirection:'row',
 		justifyContent: 'space-between',
 		marginLeft:20,
-		marginRight:20
+		marginRight:20,
     },
 	itemImage:{
 		width:50,
@@ -73,6 +73,7 @@ const styles = StyleSheet.create({
 	container:{
 		borderBottomColor:'#ddd',
 		borderBottomWidth:0.5,
-		paddingBottom:10
+		paddingBottom:10,
+        backgroundColor:'white'
 	}
 });

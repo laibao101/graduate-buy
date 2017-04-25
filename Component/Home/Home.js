@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
-import {AppRegistry, StyleSheet, Text, View, TouchableOpacity, TextInput, Image, Dimensions, Platform} from 'react-native';
+import {AppRegistry, StyleSheet, Text, View, TouchableOpacity, TextInput, Image, Dimensions, Platform, ScrollView} from 'react-native';
 
 // 自定义组件
 import HomeDetail from './HomeDetail';
+import HomeTopView from './HomeTopView';
 
 // icon
 import icons from '../../Assets/ios_icon';
@@ -14,6 +15,8 @@ export default class Home extends Component {
             <View style={styles.container}>
                 {/* 导航 */}
                 {this.renderNavBar()}
+				{/* 首页分类 */}
+				<HomeTopView></HomeTopView>
             </View>
         );
     }

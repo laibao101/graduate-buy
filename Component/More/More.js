@@ -113,6 +113,7 @@ const styles = StyleSheet.create({
         marginTop: 20
     },
     container: {
-        backgroundColor: '#ccc'
+        backgroundColor: '#eee',
+		flex:1
     }
 });

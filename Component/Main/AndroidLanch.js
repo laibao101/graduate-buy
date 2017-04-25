@@ -23,7 +23,7 @@ export default class AndroidLanch extends Component {
 			this.props.navigator.push({
 				component:Main
 			})
-		}, 1500)
+		}, 500)
     }
 }
 
