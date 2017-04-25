@@ -49,7 +49,7 @@ export default class CommonCell extends Component {
         }
         return (
             <View style={{flexDirection:'row',alignItems:'center'}}>
-                <Text style={{marginRight:10}}>{this.state.rightTitle}</Text>
+                <Text style={{paddingRight:10}}>{this.state.rightTitle}</Text>
                 <Image source={require('../../andres/icon_cell_rightarrow.png')} style={{
                     width: 8,
                     height: 13
