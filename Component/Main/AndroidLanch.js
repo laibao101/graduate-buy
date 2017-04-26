@@ -25,6 +25,10 @@ export default class AndroidLanch extends Component {
 			})
 		}, 500)
     }
+
+    componentWillUnmount(){
+        clearTimeout(this.timer);
+    }
 }
 
 const width = Dimensions.get('window').width;

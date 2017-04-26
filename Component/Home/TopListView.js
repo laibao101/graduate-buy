@@ -41,7 +41,6 @@ export default class TopListView extends Component {
 					style={styles.cellStyle}
 				>
 					<Image
-						// source={require('../../andres/ms.png')}
 						source={{uri:rowData.image}}
 						style={styles.itemImage}
 					></Image>
