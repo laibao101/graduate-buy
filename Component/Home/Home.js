@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
-import {AppRegistry, StyleSheet, Text, View, TouchableOpacity, TextInput, Image, Dimensions, Platform, ScrollView} from 'react-native';
+import {AppRegistry, StyleSheet, Text, View, TouchableOpacity, TextInput, Image, Dimensions, Platform, WebView} from 'react-native';
 
 // 自定义组件
 import HomeDetail from './HomeDetail';
 import HomeTopView from './HomeTopView';
+import HomeMiddleView from './HomeMiddleView';
+import HomeMiddleAd from './HomeMiddleAd';
 
 // icon
 import icons from '../../Assets/ios_icon';
@@ -17,6 +19,13 @@ export default class Home extends Component {
                 {this.renderNavBar()}
 				{/* 首页分类 */}
 				<HomeTopView></HomeTopView>
+                {/* 中间view */}
+                <HomeMiddleView></HomeMiddleView>
+                {/* 中间的广告 */}
+                <HomeMiddleAd></HomeMiddleAd>
+                {/* <WebView
+                    source={{uri: 'http://i.meituan.com/?utm_source=waputm_baiduwap17&utm_medium=wap'}}
+                ></WebView> */}
             </View>
         );
     }
