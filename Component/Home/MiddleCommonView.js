@@ -4,13 +4,12 @@ import {AppRegistry, StyleSheet, Text, View, Image} from 'react-native';
 export default class MiddleCommonView extends Component {
 	constructor(props){
 		super(props);
-		const data = props.data;
 
 		this.state = {
-			title:data.title || '',
-			rightImage:data.rightImage,
-			subTitle:data.subTitle,
-			titleColor:data.titleColor
+			title:props.title || '',
+			rightImage:props.rightImage,
+			subTitle:props.subTitle,
+			titleColor:props.titleColor
 		}
 	}
 

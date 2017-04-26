@@ -47,7 +47,13 @@ export default class HomeMiddleView extends Component {
 
 		rightData.map( (item,index) => {
 			viewArr.push(
-				<MiddleCommonView key={index} data={item}></MiddleCommonView>
+				<MiddleCommonView
+                    key={index}
+                    title={item.title}
+                    rightImage={item.rightImage}
+                    subTitle={item.subTitle}
+                    titleColor={item.titleColor}
+                ></MiddleCommonView>
 			);
 		});
 

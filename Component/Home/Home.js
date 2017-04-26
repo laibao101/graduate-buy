@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import {AppRegistry, StyleSheet, Text, View, TouchableOpacity, TextInput, Image, Dimensions, Platform, WebView} from 'react-native';
+import {AppRegistry, StyleSheet, Text, View, TouchableOpacity, TextInput, Image, Dimensions, Platform, WebView, ScrollView} from 'react-native';
 
 // 自定义组件
 import HomeDetail from './HomeDetail';
 import HomeTopView from './HomeTopView';
 import HomeMiddleView from './HomeMiddleView';
-import HomeMiddleAd from './HomeMiddleAd';
+import HomeMiddleAd from './HomeMidddleAd';
 
 // icon
 import icons from '../../Assets/ios_icon';
@@ -19,13 +19,16 @@ export default class Home extends Component {
                 {this.renderNavBar()}
 				{/* 首页分类 */}
 				<HomeTopView></HomeTopView>
-                {/* 中间view */}
-                <HomeMiddleView></HomeMiddleView>
-                {/* 中间的广告 */}
-                <HomeMiddleAd></HomeMiddleAd>
+				<ScrollView>
+					{/* 中间view */}
+					<HomeMiddleView style={styles.top20}></HomeMiddleView>
+					{/* 中间的广告 */}
+					<HomeMiddleAd style={styles.top20}></HomeMiddleAd>
+				</ScrollView>
+
                 {/* <WebView
                     source={{uri: 'http://i.meituan.com/?utm_source=waputm_baiduwap17&utm_medium=wap'}}
-                ></WebView> */}
+				></WebView> */}
             </View>
         );
     }
@@ -86,5 +89,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#F5FCFF'
-    }
+    },
+	top20:{
+		marginTop:20
+	}
 });
