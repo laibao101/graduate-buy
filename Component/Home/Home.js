@@ -6,6 +6,7 @@ import HomeDetail from './HomeDetail';
 import HomeTopView from './HomeTopView';
 import HomeMiddleView from './HomeMiddleView';
 import HomeMiddleAd from './HomeMidddleAd';
+import HomeBottomList from './HomeBottomList';
 
 // icon
 import icons from '../../Assets/ios_icon';
@@ -17,13 +18,16 @@ export default class Home extends Component {
             <View style={styles.container}>
                 {/* 导航 */}
                 {this.renderNavBar()}
-				{/* 首页分类 */}
-				<HomeTopView></HomeTopView>
+
 				<ScrollView>
+                    {/* 首页分类 */}
+    				<HomeTopView></HomeTopView>
 					{/* 中间view */}
 					<HomeMiddleView style={styles.top20}></HomeMiddleView>
 					{/* 中间的广告 */}
-					<HomeMiddleAd style={styles.top20}></HomeMiddleAd>
+                    <HomeMiddleAd style={styles.top20}></HomeMiddleAd>
+                    {/* 购物中心 */}
+                    <HomeBottomList></HomeBottomList>
 				</ScrollView>
 
                 {/* <WebView
