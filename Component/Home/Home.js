@@ -6,7 +6,8 @@ import HomeDetail from './HomeDetail';
 import HomeTopView from './HomeTopView';
 import HomeMiddleView from './HomeMiddleView';
 import HomeMiddleAd from './HomeMidddleAd';
-import HomeBottomList from './HomeBottomList';
+import ShopCenter from './ShopCenter';
+import HotBuy from './HotBuy';
 
 // icon
 import icons from '../../Assets/ios_icon';
@@ -27,12 +28,14 @@ export default class Home extends Component {
 					{/* 中间的广告 */}
                     <HomeMiddleAd style={styles.top20}></HomeMiddleAd>
                     {/* 购物中心 */}
-                    <HomeBottomList></HomeBottomList>
-				</ScrollView>
+                    <ShopCenter navigator={this.props.navigator}></ShopCenter>
+                    {/* 热门频道 */}
+                    <HotBuy></HotBuy>
+                </ScrollView>
 
                 {/* <WebView
                     source={{uri: 'http://i.meituan.com/?utm_source=waputm_baiduwap17&utm_medium=wap'}}
-				></WebView> */}
+                ></WebView> */}
             </View>
         );
     }
@@ -62,7 +65,6 @@ export default class Home extends Component {
     }
 }
 
-console.log(Platform);
 
 const width = Dimensions.get('window').width;
 

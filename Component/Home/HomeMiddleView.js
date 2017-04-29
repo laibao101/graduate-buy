@@ -66,6 +66,7 @@ const width = Dimensions.get('window').width;
 const styles = StyleSheet.create({
     container: {
         flexDirection:'row',
+        backgroundColor:'white'
     },
 	mainImage:{
 		width:width/3,
